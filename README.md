@@ -83,4 +83,5 @@ jazzy --swift-version 2.1.1 --min-acl internal
 ```
 
 结果如下图所示:
-![result]()
+
+![result](result_image.png)
