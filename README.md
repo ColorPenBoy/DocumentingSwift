@@ -54,3 +54,33 @@
 查看代码注释效果方法：
 
 按住 Option 键，光标放在加了注释的property、Method、Class上，当光标变为“?”样式时，左键单击即可弹出注释。
+
+###第三方工具[Jazzy](https://github.com/realm/jazzy)
+Jazzy是一款将你的OC、Swift代码，生成Apple-style文档的工具。(把代码及注释生成Html文档查看)
+
+安装：
+	
+```
+[sudo] gem install jazzy
+```
+使用Jazzy根据代码以及注释生成文档：
+[示例Demo](https://github.com/appcoda/SwiftDocSample.git)
+
+```
+// 进入项目根目录
+cd path_to_project_folder
+
+// 生成文档
+jazzy --min-acl internal
+
+// 双击打开
+```
+
+指定另外一个版本(旧版本)的swift
+
+```
+jazzy --swift-version 2.1.1 --min-acl internal
+```
+
+结果如下图所示:
+![result]()
